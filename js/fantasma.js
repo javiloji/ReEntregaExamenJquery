@@ -8,14 +8,10 @@
 
 (function () {
     jQuery.fn.fantasma = function () {
-        return this.each(function () {
 
-            $(this).fadeOut("slow").fadeIn(2000).css({
-                "background": "#C8EEA2"
-            });
-
+        $(this).fadeOut("slow").fadeIn(2000).css({
+            "background": "#C8EEA2"
         });
-        
 
     };
 })();
