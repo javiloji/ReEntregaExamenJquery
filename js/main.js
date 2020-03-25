@@ -59,8 +59,7 @@ $(function () {
     function crearTitulos (){
 
         for (let i = 0; i < $("input").val(); i++) {
-            let $nuevoTitulo = $("<h1>Titulo-"+numeroTitulo+"</h1>").appendTo($seccion);
-            numeroTitulo++;
+            let $nuevoTitulo = $("<h1>Titulo-"+numeroTitulo++ +"</h1>").appendTo($seccion);
             $nuevoTitulo.mousemove(function() {
                 $nuevoTitulo.css({
                     "background-color": arrayColores[parseInt(Math.random()*3)],
