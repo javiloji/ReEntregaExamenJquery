@@ -74,9 +74,13 @@ $(function () {
         $("#sectionAnnadidos > h1").off();
     })
 
-    $seccion.before(crearParrafo("Javier").fantasma());
-    $seccion.before(crearParrafo("Lopera").fantasma());
-    $seccion.before(crearParrafo("Jiménez").fantasma());
+    $botonAnularComportamiento.after(function () {
+        crearParrafo("Javier").fantasma();
+        crearParrafo("Lopera").fantasma();
+        crearParrafo("Jiménez").fantasma();
+    });
+    // $botonAnularComportamiento.after(crearParrafo("Lopera").fantasma());
+    // $botonAnularComportamiento.after(crearParrafo("Jiménez").fantasma());
 
 
     $botonParrafos.click(function () {
